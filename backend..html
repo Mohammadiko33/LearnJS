@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Users</title>
+ <link rel="stylesheet" href="./CSS/users.css">
+</head>
+<body>
+ 
+ <section class="continerAll">
+  <h1 class="header_title">all users that you fetched</h1>
+  <div id="users">
+
+    <section class="deleteSec">
+     <div>      
+       <p class="deleteTItle">Are You sure for delete is user?</p>
+       <button class="deleteComplate" onclick="deleteUser()">yes</button>
+       <button class="DontAllow" onclick="closeDeleteModal()">no</button>
+    </div>
+    </section>
+
+
+  </div>
+  <section class="editSec">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <p class="editSec__headertitle">Enter the new user info</p>      
+      <img src="./Assets/close.png" alt="close" style="width: 1.3rem; cursor: pointer;" onclick="closeEditModal()">
+    </div>
+
+<form bindsubmit="" action="#">
+  <input type="text" class="edit-firstName" placeholder="Enter New First Name :" autofocus required>
+  <input type="text" class="edit-LastName" placeholder="Enter New Last Name :" required>
+  <input type="number" class="edit-age" id="editFormNumber" placeholder="Enter New Age :" required>
+  <input type="password" class="edit-password" placeholder="Enter New Password :" required>
+  <input type="submit" class="edit-submit" value="Complate Edit" onclick="event.preventDefault()">
+</form>
+</section>
+ </section>
+ <script src="./JavaST/usesr.js"></script>
+</body>
+</html>

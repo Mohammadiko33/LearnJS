@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="./"> <!-- برای لینک کردن یک فایل سی اس اس -->
+</head>
+<style> 
+/* برای نوشتن استایل در صحفه اچ تی ام ال */
+ * {
+  margin: 0.5rem 0.2rem;
+ }
+ body{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+ }
+ form{
+  display: flex;
+  flex-direction: column;
+ }
+</style>
+<body>
+ <!-- text tag title  -->
+<p>پراگراف متن زیاد</p>
+<span>متن کوتاه</span>
+<h1>header title vary big</h1>
+<h2>header title big</h>
+<h3>header title</h3>
+<h4>header title small</h4>
+<h5>header title smaller</h5>
+<h6>header title vary small</h6>
+<!-- lists -->
+<ol> او ال لیست هست که ایتم هاش با شماره هستن
+ <li>1. list item</li>
+ <li>2. list item</li>
+</ol>
+<ul> یو ال لیستی هست که ایتم هاش با نقطه گلوله ای هستن
+ <li>. list item</li>
+ <li>. list item</li>
+</ul>
+<!-- tables -->
+<table> خود جدول
+ <thead>table header</thead>
+ <tbody> table body
+  <th>سطر اول بدنه جدول</th>
+  <td> table data 
+      <tr> محتوا تیبل </tr>
+      <tr> محتوا تیبل </tr>
+  </td>
+ </tbody>
+</table>
+<!-- sections -->
+<div>divition دسته بندی بخش جزعی های هر بخش</div>
+<section>بخش بندی کلی</section>
+<header>برای بخش بندی مرطب از هدر و مین و فوتر استفاده میشه هدر برای صعفه اول سایت هست</header>
+<main>بخش اصلی و محتوا</main>
+<footer>معمولا بخش تماس با ما هست بخش اخر پایینی سایت</footer>
+<!-- کاربردی -->
+<button>یک دکمه</button>
+<del>متنی که روش خط خورده مثلا تخفیف ها</del>
+<i>italic title متن ایتالیک</i>
+<em>کاربردش دقیقا مثل ولی این مهم تره حالا فرقش گفتن تو سعو هست</em>
+<b>bold title متن ذخیم</b>
+<strong>همان متن ذخیم هست ولی بازم این مهم تره ربطشم به سعو سایت هست</strong>
+<br> برای اینتر زدن
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr> برای خط انداختن
+<!-- media -->
+<audio src="./" controls>برای گذاشتن اهنگ در سایت</audio>
+<video src="./" controls>برای گذاشتن فیلم در سایت</video>
+<!-- form -->
+<form bindsubmit="" action="">
+ <label for="ipt">یک راهنما برای اینپوت</label>
+ <input type="text" name="ipt" placeholder="enter your user name" autocomplete="mohammadniko" autofocus> ورودی گرفتن متنی / نیم وقتی رو لیبل کلیک شد این اینپوت فوکوس بشه / پلیسهولدر یک راهنما برای ورودی هست / اوتو فوکوس یعنی اول که سایت بالا امد این فوکوس باشه 
+ <input type="number" value="2"> ورودی عددی
+ <input type="password" maxlength="30"> ورودی رمز با حداکثر کراکتر سی حرف
+ <input type="email" required> ورودی جیمیل یا ایمیل و این اینپوت پر کردنش واجبه
+ <input type="range"> یک محدوده مثلا فیلتر کردن قیمت در دیجی کالا
+ <input type="checkbox"> از بین گزینه ها هر چند تا را میتواند انتخاب کند
+ <input type="radio" required> از بین گزینه ها فقط یکی را انتخاب کند
+ <select name="" id=""> منوی کشویی 
+  <option value="">ایتم های منوی کشویی</option>
+  <option value="">2ایتم های منوی کشویی</option>
+ </select> 
+ <input type="reset"> خالی کردن تمام اطلاعات فرم
+ <input type="submit"> ثبت فورم
+</form>
+
+<!-- اس ار اسی تگ اسکریپت برای لینک کردن به یک فایل جاوااسکریپت هست و داخلش میشود کد های جاوااسکریپت نوشت -->
+<!-- <script src="./">  -->
+<script> 
+ document.querySelector("button").addEventListener("click", () => alert("دکمه کلیک شد"))
+</script>
+</body>
+</html>
