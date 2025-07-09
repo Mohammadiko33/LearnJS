@@ -1,0 +1,285 @@
+* {
+ list-style: none;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ text-transform: capitalize;
+ border: none;
+ outline: none;
+ border-radius: 0.5rem;
+ color: #404040;
+ text-decoration: none;
+}
+
+body {
+ background-color: #f1f3f8;
+ background-color: #202020;
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.3rem;
+ font-family: sans-serif;
+ text-align: center;
+ overflow-x: hidden;
+ flex-direction: column;
+}
+
+button {
+ cursor: pointer;
+ border-radius: 3rem;
+}
+
+button,
+input {
+ background-color: #fff;
+ padding: 1rem 1.3rem;
+ font-size: 1.2rem;
+ transition: all 0.25s ease-in-out 0.05s;
+}
+
+:root{
+ --min: #5713fd;
+ --blk: #121416;
+ --wit: #fdfdfd;
+}
+
+body{
+ background-color: var(--blk);
+}
+
+.header_title, .usersname ,.password,.userage{
+ color: var(--wit);
+}
+.header_title{
+ margin-bottom: 3rem;
+}
+#users{
+ background-color: #000000;
+ padding: 1.5rem;
+ overflow: auto;
+ display: none;
+ /* display: flex; */
+ flex-direction: column;
+ gap: 1.5rem;
+ max-height: max-content;
+border-radius: 2rem;
+}
+.user{
+ display: flex;
+ background-color: var(--blk);
+ overflow: hidden;
+ justify-content: space-between;
+}
+.image__users{
+ width: 7rem;
+ height: 8rem;
+ margin-right: 2rem;
+ padding: 1rem 0 1rem 1rem;
+
+}
+.profil{
+ width: 100%;
+ height: 100%;
+}
+
+.userinfos{
+ padding: 1rem 0;
+ display: flex;
+ justify-content: space-evenly;
+ text-align: left;
+ flex-direction: column;
+}
+.userages{
+ background-color: var(--min);
+ padding: 0.5rem;
+ width: 1.5rem;
+ height: 1.5rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* margin-top: 2.1rem; */
+ /* margin-left: 1rem; */
+}
+.userage{
+font-size: 1.1rem;
+}
+.btns{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin-left: 6rem;
+ gap: 0rem;
+ background: linear-gradient(var(--min),var(--wit));
+}
+
+.btns button{
+ transition: all 0.2s ease-in-out 0.2s;
+ height: 50%;
+
+}
+
+.btndel{
+ border-radius: 0 0.5rem 0 0;
+ background-color: var(--min);
+ color: var(--wit);
+}
+.btnedt{
+ border-radius: 0 0 0.5rem 0;
+}
+
+.btns button:hover{
+ transform: scale(1.05);
+ opacity: 0.85;
+}
+.nameAndAge{
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+}
+
+.deleteSec{
+ width: 35vw;
+ position: absolute;
+ margin: 0 auto;
+ left: 32.5%;
+ right: 32.5%;
+ top: -30rem;
+transition: all 0.5s ease-in-out 0.05s;
+z-index: 5;
+}
+.deleteSec div{
+ background-color: #fffffff4;
+ padding: 1.5rem;
+ box-shadow: 1px 1px 2rem -6px #fff;
+}
+.deleteTItle{
+ margin-bottom: 3rem;
+ font-size: 2rem;
+ font-size: 2rem;
+ color: #303030a1;
+}
+.deleteSec button{
+background-color: transparent;
+padding: 1rem 6rem;
+color: #ffffff;
+background-color: var(--min);
+transition: all 0.15s ease-in-out 0.08s;
+}
+.deleteSec button:hover{
+ background-color: transparent; 
+ border: 1px solid #f0f0f0;
+ box-shadow: 4px 4px 3rem -25px var(--min);
+ color: #203020;
+}
+.deleteSec button:active{
+transform: scale(0.5);
+}
+.deleteComplate{
+
+}
+.DontAllow{
+ margin-left: 1rem;
+ 
+}
+
+.editSec{
+  position: relative;
+  width: 15rem;
+}
+
+#editForm{
+ position: absolute;
+ top: 30vh;
+ display: flex;
+ flex-direction: column;
+ gap: 1.5rem;
+ width: 100%;
+}
+
+.editSec{
+  position: absolute;
+  top: -30rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: #b2dfff;
+  transition: all 0.5s ease-in-out 0.05s;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input{
+  width: 100%;
+  box-shadow: 12px 12px 2rem -20px #5ebcff;
+}
+
+form input:last-child{
+  border-radius: 10rem;
+  background-color: var(--min);
+  box-shadow: inset 0px 0px 2rem #ffffff91;
+  cursor: pointer;
+  color: #fff;
+}
+form input:last-child:hover{
+  box-shadow: inset 0px 0px 1rem #b2dfff;
+  background-color: #fff;
+  color: var(--blk);
+}
+
+.editSec__headertitle{
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.visiblet{
+top: 25vh;
+}
+@media only screen and (max-width: 1460px) {
+  .deleteSec {
+    width: 33rem;
+  left: 22%;
+  right: 22%;
+}
+}
+@media only screen and (max-width: 920px) {
+ .deleteSec {
+  width: 100vw;
+  left: 0;
+  right: 0;
+  /* top: 35%; */
+}
+}
+@media only screen and (max-width: 520px) {
+ .deleteSec div {
+  background-color: #fffffff4;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 2rem -6px #fff;
+  display: flex;
+  flex-direction: column;
+}
+.deleteSec {
+ width: 100vw;
+ left: 0;
+ right: 0;
+ /* top: 10%; */
+}
+.DontAllow {
+ margin-left: 0rem;
+ margin-top: 2rem;
+}
+.deleteTItle {
+ font-size: 1.4rem;
+}
+}
